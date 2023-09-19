@@ -1,21 +1,38 @@
 body{
     display: flex;
-    justify-content: center; /* Horizontally center content */
+    justify-content: flex-start; /* Horizontally center content */
     align-items: center; /* Vertically center content */
     height: 100vh; /* Use viewport height to cover the entire screen */
     margin: 0; /* Remove default body margin */
+    flex-direction: column;
+    /*padding-top: 50px;*/
 }
 
 .game-ui{
     display: flex;
     width: 50%;
+    height: 50%;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
 .square{
     background-color: white;
-    flex: 1 0 20%;
+    flex: 1 0;
     aspect-ratio: 1/1;
     border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+    width: 50%;
+}
+
+.header-button{
+    flex: 0 0 30%;
+    margin: 0px 50px 0 50px;
 }
